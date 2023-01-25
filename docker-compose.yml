@@ -7,6 +7,8 @@ services:
       - CONNECTION_STRING=postgres://demo_user:demo_user@db/demo_db
     depends_on:
       - db
+    ports:
+      - "3001:3001"
     networks:
       - network-backend
       - network-frontend
