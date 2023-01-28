@@ -1,0 +1,10 @@
+diff a/docker-compose.yml b/docker-compose.yml	(rejected hunks)
+@@ -70,7 +70,7 @@
+       - ./monitor/grafana_data:/var/lib/grafana
+       - ./monitor/grafana/provisioning/:/etc/grafana/provisioning/
+     env_file:
+-      - ./grafana/config.monitoring
++      - ./monitor/grafana/config.monitoring
+     networks:
+       - env_prod
+     restart: always      
